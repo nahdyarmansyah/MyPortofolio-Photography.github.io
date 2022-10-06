@@ -4,6 +4,7 @@ html {
 
 .banner {
   height: 70vh;
+  width: 100%;
   background-image: url('img/image.jpg');
   background-size: cover;
   background-position: center;
