@@ -1,16 +1,19 @@
-html {
-  scroll-behavior: smooth;
+html .body {
+  padding: 0 0;
 }
-
 .banner {
   height: 70vh;
-  width: 100%;
+  max-width: 100%;
   background-image: url('img/image.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.banner h2 {
+  text-align: center;
 }
 
 .banner:after {
@@ -24,11 +27,26 @@ html {
 }
 
 #about {
-  padding: 15rem 15rem;
+  padding: 20rem 0;
+}
+
+#about .container {
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+#about .container:hover {
+  transition: color 2s;
+  color: bisque;
 }
 
 #carouselExampleCaptions {
-  padding-top: 8vh;
+  padding-top: 8.5px;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
 }
 
 .banner h2 {
@@ -67,8 +85,8 @@ footer ul li {
   content: '';
   position: absolute;
   background-color: rgb(57, 57, 58);
-  left: (--x);
-  top: (--y);
+  left: var(--x);
+  top: var(--y);
   transform: translate(-50%, -50%);
   height: 0px;
   width: 0px;
@@ -89,4 +107,25 @@ footer ul li {
 
 section {
   padding-top: 5rem;
+}
+
+@media (min-width: 350px) {
+  .html .body {
+    min-width: 1000px;
+    display: flex;
+  }
+
+  .about {
+    justify-items: center;
+    columns: 10px;
+  }
+
+  #carousel-item img {
+    width: 100%;
+  }
+
+  .footer {
+    min-width: 100px;
+    padding-bottom: 50vh;
+  }
 }
