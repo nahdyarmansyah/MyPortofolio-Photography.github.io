@@ -37,7 +37,7 @@ html .body {
 
 #about .container:hover {
   transition: color 2s;
-  color: bisque;
+  color: rgb(248, 218, 45);
 }
 
 #carouselExampleCaptions {
